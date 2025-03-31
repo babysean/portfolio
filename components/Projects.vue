@@ -8,7 +8,7 @@
       </div>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- 프로젝트 1 카드 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-md cursor-pointer" @click="activeModalIndex = 1">
+        <div class="bg-white rounded-lg overflow-hidden shadow-md cursor-pointer transform transition duration-300 hover:scale-105" @click="activeModalIndex = 1">
           <div class="h-48 overflow-hidden">
             <img src="/assets/images/placeholder.png?height=300&width=500" alt="Project 1" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110\" />
           </div>
@@ -31,7 +31,7 @@
           </div>
         </div>
         <!-- 프로젝트 2 카드 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-md cursor-pointer" @click="activeModalIndex = 3">
+        <div class="bg-white rounded-lg overflow-hidden shadow-md cursor-pointer transform transition duration-300 hover:scale-105" @click="activeModalIndex = 3">
           <div class="h-48 overflow-hidden">
             <img src="/assets/images/placeholder.png?height=300&width=500" alt="Project 2" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110\" />
           </div>
@@ -56,7 +56,7 @@
         </div>
 
       <!-- 프로젝트 3 카드 -->
-      <div class="bg-white rounded-lg overflow-hidden shadow-md cursor-pointer" @click="activeModalIndex = 2">
+      <div class="bg-white rounded-lg overflow-hidden shadow-md cursor-pointer transform transition duration-300 hover:scale-105" @click="activeModalIndex = 2">
           <div class="h-48 overflow-hidden">
             <img src="/assets/images/placeholder.png?height=300&width=500" alt="Project 3" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110\" />
           </div>
