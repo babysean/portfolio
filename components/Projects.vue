@@ -86,69 +86,42 @@
         </a>
       </div>
     </div>
-
+    
     <!-- Modal for Project 1 -->
-    <transition name="fade">
-      <div v-if="activeModalIndex === 1" class="fixed inset-0 z-50 flex items-center justify-center">
-        <!-- Modal backdrop -->
-        <div class="fixed inset-0 bg-black opacity-50" @click="activeModalIndex = null"></div>
-        <!-- Modal content -->
-        <div class="bg-white p-6 rounded-lg shadow-lg z-10 max-w-lg w-full mx-4">
-          <h3 class="text-2xl font-bold mb-4">Project 1 Details</h3>
-          <div>
-            <h4 class="font-semibold">1. 개요</h4>
-            <p class="mb-2">프로젝트의 개요를 여기에 작성하세요. (예: 이 프로젝트는 ~)</p>
-            <h4 class="font-semibold">2. 성과</h4>
-            <p class="mb-2">프로젝트의 주요 성과를 여기에 작성하세요. (예: 사용자 증가, 매출 상승 등)</p>
-            <h4 class="font-semibold">3. 사용 스킬</h4>
-            <p>프로젝트에 사용된 기술 스택을 여기에 작성하세요. (예: Vue.js, Node.js, MongoDB 등)</p>
-          </div>
-          <button class="bg-indigo-600 text-white px-4 py-2 rounded" @click="activeModalIndex = null">Close</button>
-        </div>
+    <ProjectModal :show="activeModalIndex === 1" title="Project 1 Details" @close="activeModalIndex = null">
+      <div>
+        <h4 class="font-semibold">1. 개요</h4>
+        <p class="mb-2">프로젝트의 개요를 여기에 작성하세요. (예: 이 프로젝트는 ~)</p>
+        <h4 class="font-semibold">2. 성과</h4>
+        <p class="mb-2">프로젝트의 주요 성과를 여기에 작성하세요. (예: 사용자 증가, 매출 상승 등)</p>
+        <h4 class="font-semibold">3. 사용 스킬</h4>
+        <p>프로젝트에 사용된 기술 스택을 여기에 작성하세요. (예: Vue.js, Node.js, MongoDB 등)</p>
       </div>
-    </transition>
+    </ProjectModal>
 
     <!-- Modal for Project 2 -->
-    <transition name="fade">
-      <div v-if="activeModalIndex === 2" class="fixed inset-0 z-50 flex items-center justify-center">
-        <!-- Modal backdrop -->
-        <div class="fixed inset-0 bg-black opacity-50" @click="activeModalIndex = null"></div>
-        <!-- Modal content -->
-        <div class="bg-white p-6 rounded-lg shadow-lg z-10 max-w-lg w-full mx-4">
-          <h3 class="text-2xl font-bold mb-4">Project 2 Details</h3>
-          <div>
-            <h4 class="font-semibold">1. 개요</h4>
-            <p class="mb-2">프로젝트의 개요를 여기에 작성하세요. (예: 이 프로젝트는 ~)</p>
-            <h4 class="font-semibold">2. 성과</h4>
-            <p class="mb-2">프로젝트의 주요 성과를 여기에 작성하세요. (예: 사용자 증가, 매출 상승 등)</p>
-            <h4 class="font-semibold">3. 사용 스킬</h4>
-            <p>프로젝트에 사용된 기술 스택을 여기에 작성하세요. (예: Vue.js, Node.js, MongoDB 등)</p>
-          </div>
-          <button class="bg-indigo-600 text-white px-4 py-2 rounded" @click="activeModalIndex = null">Close</button>
-        </div>
+    <ProjectModal :show="activeModalIndex === 2" title="Project 3 Details" @close="activeModalIndex = null">
+      <div>
+        <h4 class="font-semibold">1. 개요</h4>
+        <p class="mb-2">프로젝트의 개요를 여기에 작성하세요. (예: 이 프로젝트는 ~)</p>
+        <h4 class="font-semibold">2. 성과</h4>
+        <p class="mb-2">프로젝트의 주요 성과를 여기에 작성하세요. (예: 사용자 증가, 매출 상승 등)</p>
+        <h4 class="font-semibold">3. 사용 스킬</h4>
+        <p>프로젝트에 사용된 기술 스택을 여기에 작성하세요. (예: Vue.js, Node.js, MongoDB 등)</p>
       </div>
-    </transition>
+    </ProjectModal>
 
     <!-- Modal for Project 3 -->
-    <transition name="fade">
-      <div v-if="activeModalIndex === 3" class="fixed inset-0 z-50 flex items-center justify-center">
-        <!-- Modal backdrop -->
-        <div class="fixed inset-0 bg-black opacity-50" @click="activeModalIndex = null"></div>
-        <!-- Modal content -->
-        <div class="bg-white p-6 rounded-lg shadow-lg z-10 max-w-lg w-full mx-4">
-          <h3 class="text-2xl font-bold mb-4">Project 3 Details</h3>
-          <div>
-            <h4 class="font-semibold">1. 개요</h4>
-            <p class="mb-2">프로젝트의 개요를 여기에 작성하세요. (예: 이 프로젝트는 ~)</p>
-            <h4 class="font-semibold">2. 성과</h4>
-            <p class="mb-2">프로젝트의 주요 성과를 여기에 작성하세요. (예: 사용자 증가, 매출 상승 등)</p>
-            <h4 class="font-semibold">3. 사용 스킬</h4>
-            <p>프로젝트에 사용된 기술 스택을 여기에 작성하세요. (예: Vue.js, Node.js, MongoDB 등)</p>
-          </div>
-          <button class="bg-indigo-600 text-white px-4 py-2 rounded" @click="activeModalIndex = null">Close</button>
-        </div>
+    <ProjectModal :show="activeModalIndex === 3" title="Project 2 Details" @close="activeModalIndex = null">
+      <div>
+        <h4 class="font-semibold">1. 개요</h4>
+        <p class="mb-2">프로젝트의 개요를 여기에 작성하세요. (예: 이 프로젝트는 ~)</p>
+        <h4 class="font-semibold">2. 성과</h4>
+        <p class="mb-2">프로젝트의 주요 성과를 여기에 작성하세요. (예: 사용자 증가, 매출 상승 등)</p>
+        <h4 class="font-semibold">3. 사용 스킬</h4>
+        <p>프로젝트에 사용된 기술 스택을 여기에 작성하세요. (예: Vue.js, Node.js, MongoDB 등)</p>
       </div>
-    </transition>
+    </ProjectModal>
   </section>
 </template>
 
